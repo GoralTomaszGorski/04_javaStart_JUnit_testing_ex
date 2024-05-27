@@ -1,12 +1,11 @@
 package goral;
 
-
-public class DateToCount {
+public class DayAndYear {
     int year;
     int month;
 
 
-    public DateToCount(int year, int month) {
+    public DayAndYear(int year, int month) {
         this.year = year;
         this.month = month;
     }
