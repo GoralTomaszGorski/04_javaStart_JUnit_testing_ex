@@ -6,6 +6,8 @@
       <list>
         <option value="$PROJECT_DIR$/dayCounter/pom.xml" />
         <option value="$PROJECT_DIR$/First_tets/pom.xml" />
+        <option value="$PROJECT_DIR$/JUnitTestCycle/pom.xml" />
+        <option value="$PROJECT_DIR$/NamingAndGrouping/pom.xml" />
       </list>
     </option>
   </component>
