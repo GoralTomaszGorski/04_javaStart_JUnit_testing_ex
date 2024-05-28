@@ -1,10 +1,9 @@
 package goral;
 
-import java.time.LocalDateTime;
 import java.time.YearMonth;
 
 
-public class DayCount {
+public class DayCalculator {
 
     int year;
     int month;
