@@ -7,10 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="First_tets" />
+        <module name="JUnit5Assertions" />
         <module name="dayCounter" />
         <module name="JUnitTestCycle" />
         <module name="NamingAndGrouping" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="AssertionExample" target="21" />
+    </bytecodeTargetLevel>
   </component>
 </project>

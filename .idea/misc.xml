@@ -8,7 +8,14 @@
         <option value="$PROJECT_DIR$/First_tets/pom.xml" />
         <option value="$PROJECT_DIR$/JUnitTestCycle/pom.xml" />
         <option value="$PROJECT_DIR$/NamingAndGrouping/pom.xml" />
+        <option value="$PROJECT_DIR$/AssertionExample/pom.xml" />
+        <option value="$PROJECT_DIR$/JUnit5Assertions/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/AssertionExample/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="openjdk-21" project-jdk-type="JavaSDK">
