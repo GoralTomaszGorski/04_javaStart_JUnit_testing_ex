@@ -5,28 +5,13 @@ import java.time.YearMonth;
 
 public class DayCalculator {
 
-    int year;
-    int month;
-
-    int getDayCount(int year, int month) {
-        switch (month){
-            case 1:
-            case 3:
-            case 5:
-            case 7:
-            case 8:
-            case 10:
-            case 12:
-                return 31;
-            case 4:
-            case 6:
-            case 9:
-            case 11:
-                return 30;
-        }
-        return (year % 400 == 0 || (year % 4 == 0 && year % 100 != 0)) ? 29 : 28;
+    public int getDayCount(int year, int month) {
+        return switch (month) {
+            case 1, 3, 5, 7, 8, 10, 12 -> 31;
+            case 4, 6, 9, 11 -> 30;
+            default -> (year % 400 == 0 || (year % 4 == 0 && year % 100 != 0)) ? 29 : 28;
+        };
     }
-
 
     int getDatCount2(int year, int month){
         return YearMonth.of(year, month).lengthOfMonth();
