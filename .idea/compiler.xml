@@ -8,10 +8,11 @@
         <outputRelativeToContentRoot value="true" />
         <module name="AssertJTest" />
         <module name="First_tets" />
+        <module name="NamingAndGrouping" />
         <module name="JUnit5Assertions" />
         <module name="dayCounter" />
+        <module name="JUnit5MultipleAssertion" />
         <module name="JUnitTestCycle" />
-        <module name="NamingAndGrouping" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
