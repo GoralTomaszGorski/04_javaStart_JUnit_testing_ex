@@ -10,6 +10,7 @@
         <option value="$PROJECT_DIR$/NamingAndGrouping/pom.xml" />
         <option value="$PROJECT_DIR$/AssertionExample/pom.xml" />
         <option value="$PROJECT_DIR$/JUnit5Assertions/pom.xml" />
+        <option value="$PROJECT_DIR$/AssertJTest/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
