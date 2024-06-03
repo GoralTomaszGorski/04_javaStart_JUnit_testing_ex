@@ -9,6 +9,7 @@
         <module name="AssertJTest" />
         <module name="First_tets" />
         <module name="NamingAndGrouping" />
+        <module name="ValueSourceExample" />
         <module name="JUnit5Assertions" />
         <module name="dayCounter" />
         <module name="JUnit5MultipleAssertion" />
