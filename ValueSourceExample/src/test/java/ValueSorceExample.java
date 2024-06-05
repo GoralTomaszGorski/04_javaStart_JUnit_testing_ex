@@ -1,7 +1,10 @@
+import goral.AccessController;
 import goral.EmailValidator;
 import goral.FibonacciGenerator;
+import goral.SignupStatus;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.EnumSource;
 import org.junit.jupiter.params.provider.ValueSource;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -51,6 +54,47 @@ public class ValueSorceExample {
 
         //then
         assertThat(isFibonacci).isTrue();
+    }
 
+    @ParameterizedTest
+    @EnumSource(value = SignupStatus.class, mode = EnumSource.Mode.EXCLUDE, names = "PAID")
+    void shouldNotHavaAccess(SignupStatus signupStatus){
+
+        //given
+        AccessController accessController = new AccessController();
+
+        //when
+        boolean hasAccess = accessController.checkAccessForSignupStatus(signupStatus);
+
+        //then
+        assertThat(hasAccess).isFalse();
+    }
+
+    @ParameterizedTest
+    @EnumSource(value = SignupStatus.class, mode = EnumSource.Mode.MATCH_ALL, names = {".*A.*", ".*ED"})
+    void shouldNotHavaAccessMatching(SignupStatus signupStatus){
+
+        //given
+        AccessController accessController = new AccessController();
+
+        //when
+        boolean hasAccess = accessController.checkAccessForSignupStatus(signupStatus);
+
+        //then
+        assertThat(hasAccess).isFalse();
+    }
+
+    @ParameterizedTest
+    @EnumSource(value = SignupStatus.class, mode = EnumSource.Mode.MATCH_ANY, names = {".*A.*", ".*ED"})
+    void shouldNotHavaAccessMatchingAny(SignupStatus signupStatus){
+
+        //given
+        AccessController accessController = new AccessController();
+
+        //when
+        boolean hasAccess = accessController.checkAccessForSignupStatus(signupStatus);
+
+        //then
+        assertThat(hasAccess).isFalse();
     }
 }
