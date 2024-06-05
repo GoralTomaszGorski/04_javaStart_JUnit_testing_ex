@@ -1,4 +1,6 @@
 import goral.EmailValidator;
+import goral.FibonacciGenerator;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
@@ -19,6 +21,36 @@ public class ValueSorceExample {
 
             // then
             assertThat(isValid).isEqualTo(true);
+    }
+
+    @ParameterizedTest
+    @ValueSource(ints ={1, 2, 3, 5, 8, 13})
+    void shouldBeFibonacciNumber(int number){
+
+        // given
+        FibonacciGenerator fibonacciGenerator = new FibonacciGenerator();
+
+        // when
+        boolean isFibonacci = fibonacciGenerator.checkIfFibonacciNumber(number);
+
+        //then
+        assertThat(isFibonacci).isTrue();
+
+    }
+
+    @DisplayName("Should be Fibonacci number ")
+    @ParameterizedTest(name = "{arguments} should be a Fibonacci number")
+    @ValueSource(ints ={1, 2, 3, 5, 8, 13})
+    void shouldBeFibonacciNumberWithPrettyName(int number){
+
+        // given
+        FibonacciGenerator fibonacciGenerator = new FibonacciGenerator();
+
+        // when
+        boolean isFibonacci = fibonacciGenerator.checkIfFibonacciNumber(number);
+
+        //then
+        assertThat(isFibonacci).isTrue();
 
     }
 }
