@@ -13,6 +13,7 @@
         <option value="$PROJECT_DIR$/AssertJTest/pom.xml" />
         <option value="$PROJECT_DIR$/JUnit5MultipleAssertion/pom.xml" />
         <option value="$PROJECT_DIR$/ValueSourceExample/pom.xml" />
+        <option value="$PROJECT_DIR$/dayCounterWithTestsParmas/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
