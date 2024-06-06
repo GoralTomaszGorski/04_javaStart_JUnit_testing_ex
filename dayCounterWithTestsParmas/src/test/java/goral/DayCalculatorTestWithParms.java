@@ -4,6 +4,10 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
+import org.junit.jupiter.params.provider.MethodSource;
+import org.junit.jupiter.params.provider.ValueSource;
+
+import java.time.YearMonth;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -36,4 +40,14 @@ class DayCalculatorTestWithParms {
         assertThat(dayCount).isEqualTo(31);
     }
 
+    @ParameterizedTest
+    @ValueSource(strings = {"2024-07", "2024-07"})
+    public void shouldReturn31DaysWithValueSourceTest(String month){
+        //given
+        YearMonth yearMonth = YearMonth.parse(month);
+        //when
+        int dayCount = dayCalculator.getDayCount(yearMonth.getYear(), yearMonth.getMonthValue());
+        //then
+        assertThat(dayCount).isEqualTo(31);
+    }
 }
