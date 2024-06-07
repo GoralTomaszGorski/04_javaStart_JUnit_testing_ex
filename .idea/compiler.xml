@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="AssertJTest" />
         <module name="First_tets" />
+        <module name="Mockito" />
         <module name="NamingAndGrouping" />
         <module name="ValueSourceExample" />
         <module name="dayCounterWithTestsParmas" />
