@@ -7,6 +7,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="AssertJTest" />
+        <module name="JavaStart_basic" />
+        <module name="MockitoSalaryCalculator" />
         <module name="First_tets" />
         <module name="Mockito" />
         <module name="NamingAndGrouping" />
