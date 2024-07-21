@@ -10,13 +10,14 @@
         <module name="JavaStart_basic" />
         <module name="MockitoSalaryCalculator" />
         <module name="First_tets" />
-        <module name="Mockito" />
         <module name="NamingAndGrouping" />
         <module name="ValueSourceExample" />
         <module name="dayCounterWithTestsParmas" />
+        <module name="JUnit5MultipleAssertion" />
+        <module name="Random" />
+        <module name="Mockito" />
         <module name="JUnit5Assertions" />
         <module name="dayCounter" />
-        <module name="JUnit5MultipleAssertion" />
         <module name="JUnitTestCycle" />
       </profile>
     </annotationProcessing>
