@@ -25,7 +25,6 @@ class UserCreationServiceTest {
         MockitoAnnotations.openMocks(this);
         userCreationService = new UserCreationService(dateTimeProvider);
 
-
         now = ZonedDateTime.now();
         when(dateTimeProvider.nowAsZonedDateTime()).thenReturn(now);
 
@@ -50,6 +49,7 @@ class UserCreationServiceTest {
 
         //then
         assertThat(user.getCreationDate()).isNotNull();
-
     }
+
+
 }
