@@ -10,7 +10,7 @@ public class PasswordResetMailContentProvider {
     }
 
     public String createResetMailContent() {
-        String template = "Cześć, aby przejść do resetowania hasła <a href=\"https://example.com/reset?key=%1s\">ten link</a>";
+        String template = "Cześć, aby przejść do resetowania hasła <a href=\"https://example.com/reset?key="+randomProvider.passwordGenerator()+"\">ten link</a>";
         String randomKey = randomProvider.passwordGenerator();
         return String.format(template, randomKey);
     }
