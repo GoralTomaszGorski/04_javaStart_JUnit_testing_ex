@@ -16,6 +16,7 @@
         <module name="JUnit5MultipleAssertion" />
         <module name="Random" />
         <module name="Mockito" />
+        <module name="PasswordReset" />
         <module name="JUnit5Assertions" />
         <module name="dayCounter" />
         <module name="JUnitTestCycle" />
